@@ -14,7 +14,7 @@ const Tab = createBottomTabNavigator();
 const App = () => {
   return(
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator screenOptions={{headerTitle: 'RENT THE RUNWAY'}}>
         <Tab.Screen name="Home" component={HomeScreen} options={
           {
             tabBarIcon: () => {
@@ -25,10 +25,37 @@ const App = () => {
           }
         }
         />
-        <Tab.Screen name="Browse" component={BrowseScreen} />
-        <Tab.Screen name="Bag" component={BagScreen} />
-        <Tab.Screen name="Hearts" component={HeartsScreen} />
-        <Tab.Screen name="MyRTR" component={MyRTRScreen} />
+        <Tab.Screen name="Browse" component={BrowseScreen} options={
+          {
+            tabBarIcon: () => {
+              return(
+                <Icon name="search-outline" size={24} />
+              )
+            }
+          }
+        } />
+        <Tab.Screen name="Bag" component={BagScreen} options={
+         {
+           tabBarIcon: () => {
+             return(
+               <Icon name="pricetag-outline" size={24} />
+             )
+           }
+         } 
+        }/>
+        <Tab.Screen name="Hearts" component={HeartsScreen} options={{
+          tabBarIcon: () => {
+            return(
+              <Icon name="heart-outline" size={24} />
+            )
+          }
+        }}/>
+        <Tab.Screen name="MyRTR" component={MyRTRScreen} options={
+        {
+          tabBarIcon: () => {
+            return <Icon name="body-outline" size={24}/>
+          }
+        }}/>
       </Tab.Navigator>
     </NavigationContainer>
   )
