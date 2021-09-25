@@ -5,7 +5,7 @@ const CardComponent = (props) => {
     return(
         <View>
             <Text>{props.title}</Text>
-
+            <Image source={props.imageSource} style={{borderRadius: 10, height: '50%', width: '50%'}} />
         </View>
     )
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text, FlatList, TouchableOpacity} from 'react-native';
+import CardComponent from '../Components/CardComponent';
 
 const Home = () => {
     return(
@@ -15,6 +16,12 @@ const Home = () => {
                         <Text>Sign Up</Text>
                     </TouchableOpacity>
                 </View> 
+                <View>
+                    <CardComponent title="Featured Brand" imageSource={require('../Images/nike-supreme-af1.png')} />
+                </View>
+                <View>
+                    <CardComponent title="Reign Supreme With Supreme" imageSource={require('../Images/pngegg-supreme.png')} />
+                </View>
         </View>
     )
 };
