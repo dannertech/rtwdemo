@@ -17,10 +17,10 @@ const Home = () => {
                     </TouchableOpacity>
                 </View> 
                 <View>
-                    <CardComponent title="Featured Brand" imageSource={require('../Images/nike-supreme-af1.png')} />
+                    <CardComponent title="Featured Brand" imageSource={require('../Images/nike-supreme-af1.png')} cardColor='red'/>
                 </View>
                 <View>
-                    <CardComponent title="Reign Supreme With Supreme" imageSource={require('../Images/pngegg-supreme.png')} />
+                    <CardComponent title="Reign Supreme With Supreme" imageSource={require('../Images/pngegg-supreme.png')}/>
                 </View>
         </View>
     )
