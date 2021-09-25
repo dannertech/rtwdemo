@@ -40,6 +40,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rtwdemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		937F76E796A6EE265AD204CA /* Pods-rtwdemo-rtwdemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtwdemo-rtwdemoTests.debug.xcconfig"; path = "Target Support Files/Pods-rtwdemo-rtwdemoTests/Pods-rtwdemo-rtwdemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9765CF97A5B6F74A0AF01748 /* Pods-rtwdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtwdemo.debug.xcconfig"; path = "Target Support Files/Pods-rtwdemo/Pods-rtwdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A7CA9B0226FEB74700262DFD /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		A7CA9B0426FEB77200262DFD /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		AC22E12167F5D8F00E466687 /* libPods-rtwdemo-rtwdemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rtwdemo-rtwdemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9408A6FE7DCD02E8B3D8B6F /* Pods-rtwdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtwdemo.release.xcconfig"; path = "Target Support Files/Pods-rtwdemo/Pods-rtwdemo.release.xcconfig"; sourceTree = "<group>"; };
 		CA75ACB062B0E59A16AEFB6C /* libPods-rtwdemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rtwdemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,8 @@
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				A7CA9B0426FEB77200262DFD /* FontAwesome.ttf */,
+				A7CA9B0226FEB74700262DFD /* Ionicons.ttf */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -145,7 +149,6 @@
 				937F76E796A6EE265AD204CA /* Pods-rtwdemo-rtwdemoTests.debug.xcconfig */,
 				61F1457183E208829E5805E7 /* Pods-rtwdemo-rtwdemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
