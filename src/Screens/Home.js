@@ -1,6 +1,21 @@
 import React from 'react';
-import {StyleSheet, View, Text, FlatList, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Text, FlatList, TouchableOpacity, ScrollView} from 'react-native';
 import CardComponent from '../Components/CardComponent';
+import CardScroll from '../Components/CardScroll';
+
+const data = [{
+    title: "Fendi",
+    imageSource: require('../Images/fendi.png')
+},
+{
+    title: "Gucci",
+    imageSource: require('../Images/gucci.png')
+},
+{
+    title: 'Prada',
+    imageSource: require('../Images/prada.png')
+}
+];
 
 const Home = () => {
     return(
@@ -15,13 +30,20 @@ const Home = () => {
                     <TouchableOpacity style={{backgroundColor: '#F3EDE6', margin: 10, paddingVertical: 20, paddingHorizontal: 40, borderRadius: 10}}>
                         <Text>Sign Up</Text>
                     </TouchableOpacity>
-                </View> 
+                </View>
+                <ScrollView>
                 <View>
                     <CardComponent title="Featured Brand" imageSource={require('../Images/nike-supreme-af1.png')} cardColor='red'/>
                 </View>
+                <FlatList 
+                horizontal={true}
+                data={data}
+                renderItem={({item}) => <CardScroll imageSource={item.imageSource} imageTitle={item.title}/>}
+                />
                 <View>
                     <CardComponent title="Reign Supreme With Supreme" imageSource={require('../Images/pngegg-supreme.png')}/>
                 </View>
+                </ScrollView>
         </View>
     )
 };

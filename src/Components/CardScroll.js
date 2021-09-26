@@ -1,10 +1,10 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, Image} from 'react-native';
 
-const CardScroll = () => {
+const CardScroll = (props) => {
     return(
-        <View>
-            <Text>Card scroll view</Text>
+        <View style={{marginHorizontal: 10, marginVertical: 20}}>
+            <Image source={props.imageSource} style={{height: 120, width: 120, borderRadius: 10}}/>
         </View>
     )
 };
